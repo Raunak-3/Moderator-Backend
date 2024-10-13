@@ -1,0 +1,112 @@
+[
+  {
+    "artistName": "Alice Johnson",
+    "artistEmail": "alice.johnson@example.com",
+    "requestDate": "2024-01-01T10:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["guitar", "vocals"],
+    "title": "Musician",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Bob Smith",
+    "artistEmail": "bob.smith@example.com",
+    "requestDate": "2024-01-05T11:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["oil painting", "watercolor"],
+    "title": "Painter",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Charlie Brown",
+    "artistEmail": "charlie.brown@example.com",
+    "requestDate": "2024-01-10T12:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["clay modeling", "3D design"],
+    "title": "Sculptor",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Diana Prince",
+    "artistEmail": "diana.prince@example.com",
+    "requestDate": "2024-01-15T13:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["portrait photography", "landscape photography"],
+    "title": "Photographer",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Edward Norton",
+    "artistEmail": "edward.norton@example.com",
+    "requestDate": "2024-01-20T14:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["graphic design", "web design"],
+    "title": "Designer",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Fiona Apple",
+    "artistEmail": "fiona.apple@example.com",
+    "requestDate": "2024-01-25T15:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["singing", "songwriting"],
+    "title": "Musician",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "George Clooney",
+    "artistEmail": "george.clooney@example.com",
+    "requestDate": "2024-02-01T16:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["landscape painting", "acrylic painting"],
+    "title": "Painter",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Hannah Montana",
+    "artistEmail": "hannah.montana@example.com",
+    "requestDate": "2024-02-05T17:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["figurative sculpture", "stone carving"],
+    "title": "Sculptor",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "Isla Fisher",
+    "artistEmail": "isla.fisher@example.com",
+    "requestDate": "2024-02-10T18:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["fashion photography", "commercial photography"],
+    "title": "Photographer",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  },
+  {
+    "artistName": "James Cameron",
+    "artistEmail": "james.cameron@example.com",
+    "requestDate": "2024-02-15T19:00:00Z",
+    "profileStatus": "pending",
+    "skills": ["product design", "illustration"],
+    "title": "Designer",
+    "isReviewed": false,
+    "workStartDate": null,
+    "initialApprovalDate": null
+  }
+]
