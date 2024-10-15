@@ -2,8 +2,10 @@ import express from "express";
 import { createArtistdev, getAllapprovedArtist, getAllonboardingRequest, getAllPendingArtist, getAllRejectedArtist, getOldArtists, getSingleApprovedRequest, getSingleOldArtist, getSinglePendingRequest, getSingleRejectRequest, markAsReviewed, updateProfileStatus } from "../controller/artist.js";
 
 const router = express.Router();
-//nested, read routes
+//nested,public, create routes
 router.post("/register",createArtistdev);
+
+//nested, read routes
 router.get("/onboardingRequest",getAllonboardingRequest);
 router.get("/approved",getAllapprovedArtist);
 router.get("/pending",getAllPendingArtist);
@@ -16,7 +18,7 @@ router.get("/approved/:artistId",getSingleApprovedRequest);
 router.get("/rejected/:artistId",getSingleRejectRequest);
 router.get("/getOldArtist/:artistId",getSingleOldArtist);
 
-//nested, create routes
+
 
 //nested, dynamic , update routes
 router.put("/:artistId/markAsReviewed",markAsReviewed);

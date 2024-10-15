@@ -274,7 +274,7 @@ export const createArtistdev = async (req, res, next) => {
       artistName,
       artistEmail,
     });
-    // await sendInitialEmailAndScheduleReminder(newArtist);
+    // await sendInitialEmailAndScheduleReminder(artistName,"artist",newArtist._id);
     return res.status(201).json({
       success: true,
       data: newArtist,

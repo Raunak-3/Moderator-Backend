@@ -10,6 +10,7 @@ import artistRouter from "./routes/artist.js";
 import adminRouter from "./routes/admin.js";
 import emailQueue from "./config/bullConfig.js";
 import { emailJob } from "./jobs/emailJob.js";
+import brandRouter from "./routes/brand.js";
 export const app = express();
 
 
@@ -30,4 +31,5 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/artist",artistRouter);
 app.use("/api/v1/admin",adminRouter);
+app.use('/api/v1/brand',brandRouter)
 app.use(errorMiddleware);
