@@ -43,10 +43,20 @@ export const registerBrand = async (req, res, next) => {
 };
 
 export const getAllNewBrand = async (req, res, next) => {
+  console.log("get all new Brands");
   try {
+    const page = Number(req.query.page) || 1; // Default page = 1
+    const limit = Number(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+
     const newBrands = await Brand.find({
       isReviewed: false,
-    });
+    })
+      .skip(skip)
+      .limit(limit);
+
+    const totalBrands = await Brand.countDocuments({ isReviewed: false });
+
     if (!newBrands.length) {
       return next(new ErrorHandler("No new Brands found", 404));
     }
@@ -54,6 +64,12 @@ export const getAllNewBrand = async (req, res, next) => {
       success: true,
       count: newBrands.length,
       data: newBrands,
+      pagination: {
+        total: totalBrands,  // Total number of unreviewed brands
+        page,                // Current page
+        pages: Math.ceil(totalBrands / limit), // Total pages
+        limit,               // Items per page
+      },
     });
   } catch (error) {
     next(error);
@@ -76,14 +92,14 @@ export const getAllApprovedBrand = async (req, res, next) => {
 };
 export const getAllPendingBrand = async (req, res, next) => {
   try {
-    const pendingBrands = await Artist.find({
+    const pendingBrands = await Brand.find({
       profileStatus: "pending",
       isReviewed: true,
     });
     if (!pendingBrands.length) {
       return next(new ErrorHandler("No pending brands found.", 404));
     }
-    //send glimpse of artist detail lists
+    //send glimpse of brand detail lists
     return res.status(200).json({
       success: true,
       data: { pendingBrands },
@@ -97,7 +113,7 @@ export const getAllPendingBrand = async (req, res, next) => {
 
 export const getAllRejectedBrand = async (req, res, next) => {
   try {
-    const rejectedBrands = await Artist.find({ profileStatus: "rejected" });
+    const rejectedBrands = await Brand.find({ profileStatus: "rejected" });
     if (!rejectedBrands.length) {
       return next(new ErrorHandler("No rejected brands found.", 404));
     }
@@ -163,17 +179,17 @@ export const getRejectedRequest = async (req, res, next) => {
   const { brandId } = req.params;
 
   try {
-    const Brand = await Brand.findOne({
+    const brand = await Brand.findOne({
       _id: brandId,
       profileStatus: "rejected",
     });
-    if (!Brand) {
+    if (!brand) {
       return next(new ErrorHandler("Rejected Brand not found.", 404));
     }
     return res.status(200).json({
       success: true,
       data: {
-        Brand,
+        brand,
       },
     });
   } catch (error) {
@@ -184,13 +200,13 @@ export const getRejectedRequest = async (req, res, next) => {
 export const markAsReviewedBrand = async (req, res, next) => {
   const { brandId } = req.params;
 
-  const updatedArtist = await Artist.findByIdAndUpdate(
+  const updatedBrand = await Brand.findByIdAndUpdate(
     brandId,
     { isReviewed: true },
     { new: true }
   );
 
-  if (!updatedArtist) {
+  if (!updatedBrand) {
     return next(new ErrorHandler("Brand not found", 404));
   }
 
@@ -198,7 +214,7 @@ export const markAsReviewedBrand = async (req, res, next) => {
     success: true,
     data: {
       message: "Brand marked as reviewed",
-      // artist: updatedArtist,
+      // brand: updatedBrand,
     },
   });
 };

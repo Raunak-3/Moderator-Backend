@@ -1,6 +1,7 @@
 import cron from "node-cron";
 import { Artist } from "../models/artist.js";
 import { nodemailerConfig } from "../config/nodemailerConfig.js";
+import { Brand } from "../models/brand.js";
 
 export const scheduleReminderEmail = (
   requestId,

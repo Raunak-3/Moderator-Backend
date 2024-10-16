@@ -1,0 +1,233 @@
+[
+  {
+    "brandName": "Kunal Sharma",
+    "brandEmail": "KunalSharma@gmail.com",
+    "brandPassword": "password123",
+    "brandPhoneNumber": 8700927305,
+    "address": "Hno. 509 Jawahar Colony NIT Faridabad",
+    "skillsRequired": [
+      "web developer",
+      "photographer",
+      "video editor",
+      "choreographer"
+    ],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "paytm",
+        "accountNumber": "8700927304"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "8700927304@kotak"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Aman Verma",
+    "brandEmail": "AmanVerma@gmail.com",
+    "brandPassword": "password456",
+    "brandPhoneNumber": 9201728306,
+    "address": "120/15 Sector 9A, Gurgaon",
+    "skillsRequired": [
+      "graphic designer",
+      "digital marketer",
+      "content writer"
+    ],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "phonepe",
+        "accountNumber": "9201728306"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "9201728306@ybl"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Priya Singh",
+    "brandEmail": "PriyaSingh@gmail.com",
+    "brandPassword": "securePass789",
+    "brandPhoneNumber": 8102938475,
+    "address": "45/B Block D, Saket, New Delhi",
+    "skillsRequired": ["fashion designer", "stylist", "makeup artist"],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "mobikwik",
+        "accountNumber": "8102938475"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "8102938475@hdfcbank"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Ravi Kapoor",
+    "brandEmail": "RaviKapoor@gmail.com",
+    "brandPassword": "raviPass001",
+    "brandPhoneNumber": 9901123344,
+    "address": "98/B, Green Park, South Delhi",
+    "skillsRequired": ["event planner", "wedding planner", "photographer"],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "paytm",
+        "accountNumber": "9901123344"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "9901123344@axisbank"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Simran Kaur",
+    "brandEmail": "SimranKaur@gmail.com",
+    "brandPassword": "simranSecret",
+    "brandPhoneNumber": 9876543210,
+    "address": "502, Nehru Colony, Ludhiana",
+    "skillsRequired": ["social media manager", "influencer", "blogger"],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "paytm",
+        "accountNumber": "9876543210"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "9876543210@icici"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Rahul Mehta",
+    "brandEmail": "RahulMehta@gmail.com",
+    "brandPassword": "rahulMehta321",
+    "brandPhoneNumber": 8823456711,
+    "address": "Plot 25, MG Road, Bangalore",
+    "skillsRequired": [
+      "app developer",
+      "full stack developer",
+      "UI/UX designer"
+    ],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "googlepay",
+        "accountNumber": "8823456711"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "8823456711@okaxis"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Neha Sharma",
+    "brandEmail": "NehaSharma@gmail.com",
+    "brandPassword": "nehaPwd987",
+    "brandPhoneNumber": 9734567891,
+    "address": "Flat 1201, Andheri West, Mumbai",
+    "skillsRequired": ["interior designer", "artist", "photographer"],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "paytm",
+        "accountNumber": "9734567891"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "9734567891@upi"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Vikram Raj",
+    "brandEmail": "VikramRaj@gmail.com",
+    "brandPassword": "vikramRaj900",
+    "brandPhoneNumber": 8112233445,
+    "address": "Hno 84, Sector 22, Noida",
+    "skillsRequired": [
+      "data analyst",
+      "financial consultant",
+      "content writer"
+    ],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "amazonpay",
+        "accountNumber": "8112233445"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "8112233445@upi"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Anjali Roy",
+    "brandEmail": "AnjaliRoy@gmail.com",
+    "brandPassword": "anjaliRoy123",
+    "brandPhoneNumber": 9873234120,
+    "address": "Hno 45, Banjara Hills, Hyderabad",
+    "skillsRequired": [
+      "PR specialist",
+      "marketing consultant",
+      "event coordinator"
+    ],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "phonepe",
+        "accountNumber": "9873234120"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "9873234120@ybl"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  },
+  {
+    "brandName": "Pooja Yadav",
+    "brandEmail": "PoojaYadav@gmail.com",
+    "brandPassword": "poojaYadav888",
+    "brandPhoneNumber": 8123456789,
+    "address": "Plot 12, Vaishali Nagar, Jaipur",
+    "skillsRequired": ["web developer", "SEO expert", "graphic designer"],
+    "payment": [
+      {
+        "method": "wallet",
+        "provider": "mobikwik",
+        "accountNumber": "8123456789"
+      },
+      {
+        "method": "Upi",
+        "UPIId": "8123456789@hdfc"
+      }
+    ],
+    "profileStatus": "pending",
+    "isReviewed": false
+  }
+]

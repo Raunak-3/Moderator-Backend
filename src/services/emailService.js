@@ -1,5 +1,5 @@
 import emailQueue from "../config/bullConfig.js";
-import scheduleReminderEmail from "../services/jobScheduler.js";
+import {scheduleReminderEmail} from "../services/jobScheduler.js";
 export const sendInitialEmailAndScheduleReminder = async (
   entityName,
   entityType,
