@@ -1,0 +1,299 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* width: 100%; */
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; 
+  /* Prevent horizontal scroll */
+}
+
+.dashboard-container {
+  height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Magical Background Animation */ 
+/* .magical-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: radial-gradient(circle at top left, #ff7eb3, #ffc7c7, #ffe3ed, #d4e7ff);
+  animation: backgroundAnimation 15s ease-in-out infinite;
+}  */
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+/* Navbar */
+/* Navbar */
+.navbar {
+  width: 100%;               /* Full width of the screen */
+  background: #333;         /* Background color */
+  color: white;             /* Text color */
+  padding: 2rem 0;          /* Increase top and bottom padding for height and spacing */
+  display: flex;            /* Flexbox for alignment */
+  align-items: center;      /* Center items vertically */
+  z-index: 1;               /* Keep navbar above other content */
+  position: fixed;          /* Fix the navbar at the top */
+  top: 20px;                /* Space from the top of the viewport */
+  left: 0;                  /* Ensure it starts from the left edge */
+  right: 0;                 /* Ensure it stretches to the right edge */
+}
+
+/* Brand Logo */
+.brand-logo h1 {
+  margin: 0;                /* Remove default margin */
+  font-family: 'Pacifico', cursive; /* Custom font for brand */
+}
+
+/* Navigation Buttons Container */
+.nav-buttons {
+  margin-left: auto;        /* Push the buttons to the right */
+  display: flex;            /* Flexbox for button layout */
+  align-items: center;      /* Center buttons vertically */
+}
+
+/* Individual Button Styles */
+.nav-button {
+  margin-left: 1rem;        /* Space between buttons */
+  background: #c38787;      /* Button background color */
+  color: white;             /* Button text color */
+  border: none;             /* No border */
+  padding: 0.5rem 1rem;     /* Padding inside buttons */
+  border-radius: 5px;       /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.logout-button {
+  background: #dc3545;      /* Specific background for logout button */
+}
+
+.nav-button:hover {
+  background: #cc61b8;      /* Darker background on hover */
+}
+
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Sidebar is hidden initially */
+  width: 300px;
+  height: 100%;
+  background: #333;
+  color: white;
+  transition: left 0.3s ease;
+  padding-top: 4rem;
+  z-index: 100; /* Sidebar should overlay content */
+  overflow-y: hidden;
+}
+
+.sidebar.visible {
+  left: 0; /* Sidebar is visible */
+}
+
+.sidebar-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffeb3b;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 1rem 2rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Close Sidebar Button */
+.close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+  color: #ffeb3b;
+}
+
+
+/* Menu Toggle */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 4; /* Keep toggle button above other content */
+  padding-left: 20px; /* Adjust this value as needed */
+  padding-right: 20px;
+}
+
+.menu-dot {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  margin: 2px 0;
+}
+
+/* Main Content */
+/* Main Content */
+.main-content {
+  padding: 3rem 5rem;        /* Center the content with padding */
+  margin-top: 6rem;          /* Add margin to create space below the navbar */
+  z-index: 1;                /* Ensure it's above other content */
+  position: relative;        /* Set relative positioning */
+}
+
+
+/* Brand Info Container */
+.brand-info-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.brand-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+}
+
+.stat-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: #007bff;
+}
+
+
+/* Main Content Styling */
+/* .main-content {
+  padding: 20px;
+  text-align: center;
+} */
+
+/* Shape-Shifting Button */
+.button-container {
+  margin-top: 40px;
+}
+
+.shape-shifting-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff8a00, #da1b60);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.shape-shifting-button:hover {
+  background: linear-gradient(135deg, #da1b60, #ff8a00);
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.shape-shifting-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+}
+
+.shape-shifting-button:hover:before {
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.shape-shifting-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.shape-shifting-button:hover:after {
+  width: 300%;
+  height: 300%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Align content */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.brand-info-container {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  min-height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth; /* Smooth scroll */
+  background-size: 400% 400%;
+  animation: backgroundAnimation 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Keep content aligned to the top */
+}
+
+.registration-form {
+  width: 95%; /* Increase form width to cover more space */
+  margin: 40px 40px; /* Center the form equally from left and right */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: center;
+  z-index: 10;
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  color: #6c63ff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registration-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.registration-form input,
+.registration-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.3);
+}
+
+/* Set cursor to pointer for specified sections */
+.registration-form select,
+.registration-form input[type="date"],
+.registration-form input[type="file"] {
+  cursor: pointer; /* Pointer cursor for dropdown, date, and file upload */
+}
+
+button[type='submit'] {
+  padding: 12px;
+  background: linear-gradient(45deg, #6c63ff, #b8a9c9);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* Pointer cursor for submit button */
+  font-size: 1.1em;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button[type='submit']:hover {
+  background: linear-gradient(45deg, #6c63ff, #4a4e69);
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: -10px;
+}
+
+/* Background animation */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Dazzling background effects */
+.dazzling-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle, #ffffff20 10%, transparent 10.1%);
+  background-size: 20px 20px;
+  animation: sparkle 4s linear infinite;
+}
+
+@keyframes sparkle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
+}
+
+/* Additional cursor pointer styling for the file input */
+.registration-form input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer; /* Set pointer cursor for the 'Choose File' button in Chrome */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .registration-form {
+    width: 95%; /* Adjust width for smaller screens */
+    margin: 20px 2.5%; /* Maintain equal left and right spacing */
+    padding: 20px;
+  }
+
+  .registration-form h2 {
+    font-size: 1.8em;
+  }
+}
